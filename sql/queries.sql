@@ -1,38 +1,60 @@
--- Top 5 Funds by AUM
-
-SELECT
-scheme_name,
-aum_crore
-FROM scheme_performance
+-- 1
+SELECT *
+FROM fact_performance
 ORDER BY aum_crore DESC
 LIMIT 5;
 
--- Top Fund Houses
+-- 2
+SELECT
+AVG(nav)
+FROM fact_nav;
 
+-- 3
+SELECT
+state,
+SUM(amount_inr)
+FROM fact_transactions
+GROUP BY state;
+
+-- 4
+SELECT
+scheme_name,
+expense_ratio_pct
+FROM fact_performance
+WHERE expense_ratio_pct < 1;
+
+-- 5
 SELECT
 fund_house,
 COUNT(*)
 FROM dim_fund
 GROUP BY fund_house;
 
--- Average Expense Ratio
-
+-- 6
 SELECT
-AVG(expense_ratio_pct)
-FROM dim_fund;
-
--- High Sharpe Ratio Funds
-
-SELECT
-scheme_name,
-sharpe_ratio
+risk_grade,
+COUNT(*)
 FROM fact_performance
-ORDER BY sharpe_ratio DESC;
+GROUP BY risk_grade;
 
--- Lowest Drawdown Funds
-
+-- 7
 SELECT
-scheme_name,
-max_drawdown_pct
-FROM fact_performance
-ORDER BY max_drawdown_pct DESC;
+AVG(sharpe_ratio)
+FROM fact_performance;
+
+-- 8
+SELECT
+MAX(return_5yr_pct)
+FROM fact_performance;
+
+-- 9
+SELECT
+MIN(max_drawdown_pct)
+FROM fact_performance;
+
+-- 10
+SELECT
+category,
+COUNT(*)
+FROM dim_fund
+GROUP BY category;
