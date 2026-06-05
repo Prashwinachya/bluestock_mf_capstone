@@ -1,0 +1,1788 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='03_aum_by_fund_house' inline='true' name='federated.1hbcs5n1frkkif0zv693m18phlut' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='03_aum_by_fund_house' name='textscan.1dk7aui1bek624119v81718wcaqf'>
+            <connection class='textscan' directory='/Users/pkj/Desktop/Projects/Bluestock_mf_capstone/Data/raw' filename='03_aum_by_fund_house.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1dk7aui1bek624119v81718wcaqf' name='03_aum_by_fund_house.csv' table='[03_aum_by_fund_house#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='fund_house' ordinal='1' />
+            <column datatype='real' name='aum_lakh_crore' ordinal='2' />
+            <column datatype='integer' name='aum_crore' ordinal='3' />
+            <column datatype='integer' name='num_schemes' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[03_aum_by_fund_house.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[03_aum_by_fund_house.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_aum_by_fund_house.csv_717D4BE2DBB14F7497A7FDE6E5F3B0C3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fund_house</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fund_house]</local-name>
+            <parent-name>[03_aum_by_fund_house.csv]</parent-name>
+            <remote-alias>fund_house</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[03_aum_by_fund_house.csv_717D4BE2DBB14F7497A7FDE6E5F3B0C3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aum_lakh_crore</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[aum_lakh_crore]</local-name>
+            <parent-name>[03_aum_by_fund_house.csv]</parent-name>
+            <remote-alias>aum_lakh_crore</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_aum_by_fund_house.csv_717D4BE2DBB14F7497A7FDE6E5F3B0C3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aum_crore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[aum_crore]</local-name>
+            <parent-name>[03_aum_by_fund_house.csv]</parent-name>
+            <remote-alias>aum_crore</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_aum_by_fund_house.csv_717D4BE2DBB14F7497A7FDE6E5F3B0C3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_schemes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_schemes]</local-name>
+            <parent-name>[03_aum_by_fund_house.csv]</parent-name>
+            <remote-alias>num_schemes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_aum_by_fund_house.csv_717D4BE2DBB14F7497A7FDE6E5F3B0C3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='03_aum_by_fund_house.csv' datatype='table' name='[__tableau_internal_object_id__].[03_aum_by_fund_house.csv_717D4BE2DBB14F7497A7FDE6E5F3B0C3]' role='measure' type='quantitative' />
+      <column caption='Aum Crore' datatype='integer' name='[aum_crore]' role='measure' type='quantitative' />
+      <column caption='Aum Lakh Crore' datatype='real' name='[aum_lakh_crore]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Fund House' datatype='string' name='[fund_house]' role='dimension' type='nominal' />
+      <column caption='Num Schemes' datatype='integer' name='[num_schemes]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='03_aum_by_fund_house.csv' id='03_aum_by_fund_house.csv_717D4BE2DBB14F7497A7FDE6E5F3B0C3'>
+            <properties context=''>
+              <relation connection='textscan.1dk7aui1bek624119v81718wcaqf' name='03_aum_by_fund_house.csv' table='[03_aum_by_fund_house#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='fund_house' ordinal='1' />
+                  <column datatype='real' name='aum_lakh_crore' ordinal='2' />
+                  <column datatype='integer' name='aum_crore' ordinal='3' />
+                  <column datatype='integer' name='num_schemes' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='07_scheme_performance' inline='true' name='federated.1c422ml0laery51bpxozo1ik5nyz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='07_scheme_performance' name='textscan.1qji0rg0ck01mi108cwg60zd3o5r'>
+            <connection class='textscan' directory='/Users/pkj/Desktop/Projects/Bluestock_mf_capstone/Data/raw' filename='07_scheme_performance.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qji0rg0ck01mi108cwg60zd3o5r' name='07_scheme_performance.csv' table='[07_scheme_performance#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='amfi_code' ordinal='0' />
+            <column datatype='string' name='scheme_name' ordinal='1' />
+            <column datatype='string' name='fund_house' ordinal='2' />
+            <column datatype='string' name='category' ordinal='3' />
+            <column datatype='string' name='plan' ordinal='4' />
+            <column datatype='real' name='return_1yr_pct' ordinal='5' />
+            <column datatype='real' name='return_3yr_pct' ordinal='6' />
+            <column datatype='real' name='return_5yr_pct' ordinal='7' />
+            <column datatype='real' name='benchmark_3yr_pct' ordinal='8' />
+            <column datatype='real' name='alpha' ordinal='9' />
+            <column datatype='real' name='beta' ordinal='10' />
+            <column datatype='real' name='sharpe_ratio' ordinal='11' />
+            <column datatype='real' name='sortino_ratio' ordinal='12' />
+            <column datatype='real' name='std_dev_ann_pct' ordinal='13' />
+            <column datatype='real' name='max_drawdown_pct' ordinal='14' />
+            <column datatype='integer' name='aum_crore' ordinal='15' />
+            <column datatype='real' name='expense_ratio_pct' ordinal='16' />
+            <column datatype='integer' name='morningstar_rating' ordinal='17' />
+            <column datatype='string' name='risk_grade' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amfi_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amfi_code]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>amfi_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scheme_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scheme_name]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>scheme_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fund_house</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fund_house]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>fund_house</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plan</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[plan]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>plan</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_1yr_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[return_1yr_pct]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>return_1yr_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_3yr_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[return_3yr_pct]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>return_3yr_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_5yr_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[return_5yr_pct]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>return_5yr_pct</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>benchmark_3yr_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[benchmark_3yr_pct]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>benchmark_3yr_pct</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alpha</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[alpha]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>alpha</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>beta</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[beta]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>beta</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sharpe_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sharpe_ratio]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>sharpe_ratio</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sortino_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sortino_ratio]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>sortino_ratio</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>std_dev_ann_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[std_dev_ann_pct]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>std_dev_ann_pct</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_drawdown_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[max_drawdown_pct]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>max_drawdown_pct</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aum_crore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[aum_crore]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>aum_crore</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expense_ratio_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expense_ratio_pct]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>expense_ratio_pct</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>morningstar_rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[morningstar_rating]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>morningstar_rating</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>risk_grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[risk_grade]</local-name>
+            <parent-name>[07_scheme_performance.csv]</parent-name>
+            <remote-alias>risk_grade</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='07_scheme_performance.csv' datatype='table' name='[__tableau_internal_object_id__].[07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48]' role='measure' type='quantitative' />
+      <column caption='Alpha' datatype='real' name='[alpha]' role='measure' type='quantitative' />
+      <column caption='Amfi Code' datatype='integer' name='[amfi_code]' role='dimension' type='ordinal' />
+      <column caption='Aum Crore' datatype='integer' name='[aum_crore]' role='measure' type='quantitative' />
+      <column caption='Benchmark 3Yr Pct' datatype='real' name='[benchmark_3yr_pct]' role='measure' type='quantitative' />
+      <column caption='Beta' datatype='real' name='[beta]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Expense Ratio Pct' datatype='real' name='[expense_ratio_pct]' role='measure' type='quantitative' />
+      <column caption='Fund House' datatype='string' name='[fund_house]' role='dimension' type='nominal' />
+      <column caption='Max Drawdown Pct' datatype='real' name='[max_drawdown_pct]' role='measure' type='quantitative' />
+      <column caption='Morningstar Rating' datatype='integer' name='[morningstar_rating]' role='measure' type='quantitative' />
+      <column caption='Plan' datatype='string' name='[plan]' role='dimension' type='nominal' />
+      <column caption='Return 1Yr Pct' datatype='real' name='[return_1yr_pct]' role='measure' type='quantitative' />
+      <column caption='Return 3Yr Pct' datatype='real' name='[return_3yr_pct]' role='measure' type='quantitative' />
+      <column caption='Return 5Yr Pct' datatype='real' name='[return_5yr_pct]' role='measure' type='quantitative' />
+      <column caption='Risk Grade' datatype='string' name='[risk_grade]' role='dimension' type='nominal' />
+      <column caption='Scheme Name' datatype='string' name='[scheme_name]' role='dimension' type='nominal' />
+      <column caption='Sharpe Ratio' datatype='real' name='[sharpe_ratio]' role='measure' type='quantitative' />
+      <column caption='Sortino Ratio' datatype='real' name='[sortino_ratio]' role='measure' type='quantitative' />
+      <column caption='Std Dev Ann Pct' datatype='real' name='[std_dev_ann_pct]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='07_scheme_performance.csv' id='07_scheme_performance.csv_9356A5E01AD842BF9824AEA0A8D4AF48'>
+            <properties context=''>
+              <relation connection='textscan.1qji0rg0ck01mi108cwg60zd3o5r' name='07_scheme_performance.csv' table='[07_scheme_performance#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='amfi_code' ordinal='0' />
+                  <column datatype='string' name='scheme_name' ordinal='1' />
+                  <column datatype='string' name='fund_house' ordinal='2' />
+                  <column datatype='string' name='category' ordinal='3' />
+                  <column datatype='string' name='plan' ordinal='4' />
+                  <column datatype='real' name='return_1yr_pct' ordinal='5' />
+                  <column datatype='real' name='return_3yr_pct' ordinal='6' />
+                  <column datatype='real' name='return_5yr_pct' ordinal='7' />
+                  <column datatype='real' name='benchmark_3yr_pct' ordinal='8' />
+                  <column datatype='real' name='alpha' ordinal='9' />
+                  <column datatype='real' name='beta' ordinal='10' />
+                  <column datatype='real' name='sharpe_ratio' ordinal='11' />
+                  <column datatype='real' name='sortino_ratio' ordinal='12' />
+                  <column datatype='real' name='std_dev_ann_pct' ordinal='13' />
+                  <column datatype='real' name='max_drawdown_pct' ordinal='14' />
+                  <column datatype='integer' name='aum_crore' ordinal='15' />
+                  <column datatype='real' name='expense_ratio_pct' ordinal='16' />
+                  <column datatype='integer' name='morningstar_rating' ordinal='17' />
+                  <column datatype='string' name='risk_grade' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='08_investor_transactions' inline='true' name='federated.0escz7h08f11l41bhw1sv0ik1qw2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='08_investor_transactions' name='textscan.036z4xe0i905d3113xpyz1r2zi9u'>
+            <connection class='textscan' directory='/Users/pkj/Desktop/Projects/Bluestock_mf_capstone/Data/raw' filename='08_investor_transactions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.036z4xe0i905d3113xpyz1r2zi9u' name='08_investor_transactions.csv' table='[08_investor_transactions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='investor_id' ordinal='0' />
+            <column datatype='date' name='transaction_date' ordinal='1' />
+            <column datatype='integer' name='amfi_code' ordinal='2' />
+            <column datatype='string' name='transaction_type' ordinal='3' />
+            <column datatype='integer' name='amount_inr' ordinal='4' />
+            <column datatype='string' name='state' ordinal='5' />
+            <column datatype='string' name='city' ordinal='6' />
+            <column datatype='string' name='city_tier' ordinal='7' />
+            <column datatype='string' name='age_group' ordinal='8' />
+            <column datatype='string' name='gender' ordinal='9' />
+            <column datatype='real' name='annual_income_lakh' ordinal='10' />
+            <column datatype='string' name='payment_mode' ordinal='11' />
+            <column datatype='string' name='kyc_status' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>investor_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[investor_id]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>investor_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[transaction_date]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>transaction_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amfi_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amfi_code]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>amfi_code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transaction_type]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>transaction_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount_inr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amount_inr]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>amount_inr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city_tier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city_tier]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>city_tier</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_group]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>age_group</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annual_income_lakh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[annual_income_lakh]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>annual_income_lakh</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_mode]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>payment_mode</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kyc_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[kyc_status]</local-name>
+            <parent-name>[08_investor_transactions.csv]</parent-name>
+            <remote-alias>kyc_status</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='08_investor_transactions.csv' datatype='table' name='[__tableau_internal_object_id__].[08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480]' role='measure' type='quantitative' />
+      <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+      <column caption='Amfi Code' datatype='integer' name='[amfi_code]' role='dimension' type='ordinal' />
+      <column caption='Amount Inr' datatype='integer' name='[amount_inr]' role='measure' type='quantitative' />
+      <column caption='Annual Income Lakh' datatype='real' name='[annual_income_lakh]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='City Tier' datatype='string' name='[city_tier]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Investor Id' datatype='string' name='[investor_id]' role='dimension' type='nominal' />
+      <column caption='Kyc Status' datatype='string' name='[kyc_status]' role='dimension' type='nominal' />
+      <column caption='Payment Mode' datatype='string' name='[payment_mode]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Transaction Date' datatype='date' name='[transaction_date]' role='dimension' type='ordinal' />
+      <column caption='Transaction Type' datatype='string' name='[transaction_type]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='08_investor_transactions.csv' id='08_investor_transactions.csv_DF7FDA489047458B9AF4EB73CC102480'>
+            <properties context=''>
+              <relation connection='textscan.036z4xe0i905d3113xpyz1r2zi9u' name='08_investor_transactions.csv' table='[08_investor_transactions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='investor_id' ordinal='0' />
+                  <column datatype='date' name='transaction_date' ordinal='1' />
+                  <column datatype='integer' name='amfi_code' ordinal='2' />
+                  <column datatype='string' name='transaction_type' ordinal='3' />
+                  <column datatype='integer' name='amount_inr' ordinal='4' />
+                  <column datatype='string' name='state' ordinal='5' />
+                  <column datatype='string' name='city' ordinal='6' />
+                  <column datatype='string' name='city_tier' ordinal='7' />
+                  <column datatype='string' name='age_group' ordinal='8' />
+                  <column datatype='string' name='gender' ordinal='9' />
+                  <column datatype='real' name='annual_income_lakh' ordinal='10' />
+                  <column datatype='string' name='payment_mode' ordinal='11' />
+                  <column datatype='string' name='kyc_status' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='09_portfolio_holdings' inline='true' name='federated.00l3wyp07swk6k1682l5b1w0d49w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='09_portfolio_holdings' name='textscan.0unkzzl0rptv2w1190nzm1xi20n9'>
+            <connection class='textscan' directory='/Users/pkj/Desktop/Projects/Bluestock_mf_capstone/Data/raw' filename='09_portfolio_holdings.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0unkzzl0rptv2w1190nzm1xi20n9' name='09_portfolio_holdings.csv' table='[09_portfolio_holdings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='amfi_code' ordinal='0' />
+            <column datatype='string' name='stock_symbol' ordinal='1' />
+            <column datatype='string' name='stock_name' ordinal='2' />
+            <column datatype='string' name='sector' ordinal='3' />
+            <column datatype='real' name='weight_pct' ordinal='4' />
+            <column datatype='real' name='market_value_cr' ordinal='5' />
+            <column datatype='real' name='current_price_inr' ordinal='6' />
+            <column datatype='date' name='portfolio_date' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[09_portfolio_holdings.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amfi_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amfi_code]</local-name>
+            <parent-name>[09_portfolio_holdings.csv]</parent-name>
+            <remote-alias>amfi_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stock_symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stock_symbol]</local-name>
+            <parent-name>[09_portfolio_holdings.csv]</parent-name>
+            <remote-alias>stock_symbol</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stock_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stock_name]</local-name>
+            <parent-name>[09_portfolio_holdings.csv]</parent-name>
+            <remote-alias>stock_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sector]</local-name>
+            <parent-name>[09_portfolio_holdings.csv]</parent-name>
+            <remote-alias>sector</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weight_pct]</local-name>
+            <parent-name>[09_portfolio_holdings.csv]</parent-name>
+            <remote-alias>weight_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_value_cr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[market_value_cr]</local-name>
+            <parent-name>[09_portfolio_holdings.csv]</parent-name>
+            <remote-alias>market_value_cr</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current_price_inr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[current_price_inr]</local-name>
+            <parent-name>[09_portfolio_holdings.csv]</parent-name>
+            <remote-alias>current_price_inr</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>portfolio_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[portfolio_date]</local-name>
+            <parent-name>[09_portfolio_holdings.csv]</parent-name>
+            <remote-alias>portfolio_date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='09_portfolio_holdings.csv' datatype='table' name='[__tableau_internal_object_id__].[09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076]' role='measure' type='quantitative' />
+      <column caption='Amfi Code' datatype='integer' name='[amfi_code]' role='dimension' type='ordinal' />
+      <column caption='Current Price Inr' datatype='real' name='[current_price_inr]' role='measure' type='quantitative' />
+      <column caption='Market Value Cr' datatype='real' name='[market_value_cr]' role='measure' type='quantitative' />
+      <column caption='Portfolio Date' datatype='date' name='[portfolio_date]' role='dimension' type='ordinal' />
+      <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+      <column caption='Stock Name' datatype='string' name='[stock_name]' role='dimension' type='nominal' />
+      <column caption='Stock Symbol' datatype='string' name='[stock_symbol]' role='dimension' type='nominal' />
+      <column caption='Weight Pct' datatype='real' name='[weight_pct]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='09_portfolio_holdings.csv' id='09_portfolio_holdings.csv_407893F2EF7943B7979C85F48B2EB076'>
+            <properties context=''>
+              <relation connection='textscan.0unkzzl0rptv2w1190nzm1xi20n9' name='09_portfolio_holdings.csv' table='[09_portfolio_holdings#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='amfi_code' ordinal='0' />
+                  <column datatype='string' name='stock_symbol' ordinal='1' />
+                  <column datatype='string' name='stock_name' ordinal='2' />
+                  <column datatype='string' name='sector' ordinal='3' />
+                  <column datatype='real' name='weight_pct' ordinal='4' />
+                  <column datatype='real' name='market_value_cr' ordinal='5' />
+                  <column datatype='real' name='current_price_inr' ordinal='6' />
+                  <column datatype='date' name='portfolio_date' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_A5F118C2D5F643AEBCF0D546F25D6528]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Perfromace Analysis' type='sheet' worksheet='Sharpe Ranking' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Perfromace Analysis' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_45217C2506A4436A98696B01E0C3FC45]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Portfolio Analytics' type='sheet' worksheet='Top Holdings' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Portfolio Analytics' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_A6CFC192B7C04620932E85076E1CD1C1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Portfolio Analytics' type='sheet' worksheet='Sector Allocation' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Portfolio Analytics' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='5 Year Returns'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top Funds by Sharpe Ratio &amp; Long-Term Returns
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='07_scheme_performance' name='federated.1c422ml0laery51bpxozo1ik5nyz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c422ml0laery51bpxozo1ik5nyz'>
+            <column-instance column='[scheme_name]' derivation='None' name='[none:scheme_name:nk]' pivot='key' type='nominal' />
+            <column caption='Return 5Yr Pct' datatype='real' name='[return_5yr_pct]' role='measure' type='quantitative' />
+            <column caption='Scheme Name' datatype='string' name='[scheme_name]' role='dimension' type='nominal' />
+            <column-instance column='[return_5yr_pct]' derivation='Sum' name='[sum:return_5yr_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1c422ml0laery51bpxozo1ik5nyz].[none:scheme_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1c422ml0laery51bpxozo1ik5nyz].[sum:return_5yr_pct:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1c422ml0laery51bpxozo1ik5nyz].[none:scheme_name:nk]</rows>
+        <cols>[federated.1c422ml0laery51bpxozo1ik5nyz].[sum:return_5yr_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{4872DDAE-C1B4-428B-A74E-32DA81B14B05}' />
+    </worksheet>
+    <worksheet name='AUM by Fund House'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Mutual Fund Industry Overview Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='03_aum_by_fund_house' name='federated.1hbcs5n1frkkif0zv693m18phlut' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hbcs5n1frkkif0zv693m18phlut'>
+            <column caption='Aum Crore' datatype='integer' name='[aum_crore]' role='measure' type='quantitative' />
+            <column caption='Fund House' datatype='string' name='[fund_house]' role='dimension' type='nominal' />
+            <column-instance column='[fund_house]' derivation='None' name='[none:fund_house:nk]' pivot='key' type='nominal' />
+            <column-instance column='[aum_crore]' derivation='Sum' name='[sum:aum_crore:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hbcs5n1frkkif0zv693m18phlut].[none:fund_house:nk]'>
+            <groupfilter function='level-members' level='[none:fund_house:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1hbcs5n1frkkif0zv693m18phlut].[none:fund_house:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1hbcs5n1frkkif0zv693m18phlut].[sum:aum_crore:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1hbcs5n1frkkif0zv693m18phlut].[none:fund_house:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1hbcs5n1frkkif0zv693m18phlut].[none:fund_house:nk]</rows>
+        <cols>[federated.1hbcs5n1frkkif0zv693m18phlut].[sum:aum_crore:qk]</cols>
+      </table>
+      <simple-id uuid='{59518337-FF62-4B42-9958-81639D3D204D}' />
+    </worksheet>
+    <worksheet name='Age Group Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Investor Demographics &amp; Geographic Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='08_investor_transactions' name='federated.0escz7h08f11l41bhw1sv0ik1qw2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0escz7h08f11l41bhw1sv0ik1qw2'>
+            <column caption='Age Group' datatype='string' name='[age_group]' role='dimension' type='nominal' />
+            <column caption='Amount Inr' datatype='integer' name='[amount_inr]' role='measure' type='quantitative' />
+            <column-instance column='[investor_id]' derivation='CountD' name='[ctd:investor_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Investor Id' datatype='string' name='[investor_id]' role='dimension' type='nominal' />
+            <column-instance column='[age_group]' derivation='None' name='[none:age_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[amount_inr]' derivation='Sum' name='[sum:amount_inr:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0escz7h08f11l41bhw1sv0ik1qw2].[none:age_group:nk]' />
+              <wedge-size column='[federated.0escz7h08f11l41bhw1sv0ik1qw2].[sum:amount_inr:qk]' />
+              <size column='[federated.0escz7h08f11l41bhw1sv0ik1qw2].[ctd:investor_id:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1D144127-9B0E-428E-960C-204562C55D21}' />
+    </worksheet>
+    <worksheet name='Sector Allocation'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Portfolio Holdings &amp; Sector Allocation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='09_portfolio_holdings' name='federated.00l3wyp07swk6k1682l5b1w0d49w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00l3wyp07swk6k1682l5b1w0d49w'>
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stock_name]' derivation='None' name='[none:stock_name:nk]' pivot='key' type='nominal' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column caption='Stock Name' datatype='string' name='[stock_name]' role='dimension' type='nominal' />
+            <column-instance column='[weight_pct]' derivation='Sum' name='[sum:weight_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Weight Pct' datatype='real' name='[weight_pct]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:sector:nk]'>
+            <groupfilter function='level-members' level='[none:sector:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:stock_name:nk]'>
+            <groupfilter function='level-members' level='[none:stock_name:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:sector:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.00l3wyp07swk6k1682l5b1w0d49w].[sum:weight_pct:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:stock_name:nk]</column>
+            <column>[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:sector:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:sector:nk]</rows>
+        <cols>[federated.00l3wyp07swk6k1682l5b1w0d49w].[sum:weight_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{D9BD7479-BCBF-4F1A-891F-32A6F30E6774}' />
+    </worksheet>
+    <worksheet name='Sharpe Ranking'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top Funds by Sharpe Ratio &amp; Long-Term Returns</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='07_scheme_performance' name='federated.1c422ml0laery51bpxozo1ik5nyz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c422ml0laery51bpxozo1ik5nyz'>
+            <column-instance column='[risk_grade]' derivation='None' name='[none:risk_grade:nk]' pivot='key' type='nominal' />
+            <column-instance column='[scheme_name]' derivation='None' name='[none:scheme_name:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Grade' datatype='string' name='[risk_grade]' role='dimension' type='nominal' />
+            <column caption='Scheme Name' datatype='string' name='[scheme_name]' role='dimension' type='nominal' />
+            <column caption='Sharpe Ratio' datatype='real' name='[sharpe_ratio]' role='measure' type='quantitative' />
+            <column-instance column='[sharpe_ratio]' derivation='Sum' name='[sum:sharpe_ratio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c422ml0laery51bpxozo1ik5nyz].[none:risk_grade:nk]'>
+            <groupfilter function='level-members' level='[none:risk_grade:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.1c422ml0laery51bpxozo1ik5nyz].[none:scheme_name:nk]'>
+            <groupfilter function='level-members' level='[none:scheme_name:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1c422ml0laery51bpxozo1ik5nyz].[none:scheme_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1c422ml0laery51bpxozo1ik5nyz].[sum:sharpe_ratio:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1c422ml0laery51bpxozo1ik5nyz].[none:risk_grade:nk]</column>
+            <column>[federated.1c422ml0laery51bpxozo1ik5nyz].[none:scheme_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1c422ml0laery51bpxozo1ik5nyz].[none:scheme_name:nk]</rows>
+        <cols>[federated.1c422ml0laery51bpxozo1ik5nyz].[sum:sharpe_ratio:qk]</cols>
+      </table>
+      <simple-id uuid='{CC0FCCE3-3F91-45A0-BF00-EF3AB5C2970E}' />
+    </worksheet>
+    <worksheet name='State Investment '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Investor Demographics &amp; Geographic Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='08_investor_transactions' name='federated.0escz7h08f11l41bhw1sv0ik1qw2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0escz7h08f11l41bhw1sv0ik1qw2'>
+            <column caption='Amount Inr' datatype='integer' name='[amount_inr]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[amount_inr]' derivation='Sum' name='[sum:amount_inr:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0escz7h08f11l41bhw1sv0ik1qw2].[none:state:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0escz7h08f11l41bhw1sv0ik1qw2].[sum:amount_inr:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0escz7h08f11l41bhw1sv0ik1qw2].[none:state:nk]</rows>
+        <cols>[federated.0escz7h08f11l41bhw1sv0ik1qw2].[sum:amount_inr:qk]</cols>
+      </table>
+      <simple-id uuid='{45FCD016-F992-46FB-B428-F2D6EE84A4AB}' />
+    </worksheet>
+    <worksheet name='Top Holdings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Portfolio Holdings &amp; Sector Allocation
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='09_portfolio_holdings' name='federated.00l3wyp07swk6k1682l5b1w0d49w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00l3wyp07swk6k1682l5b1w0d49w'>
+            <column caption='Market Value Cr' datatype='real' name='[market_value_cr]' role='measure' type='quantitative' />
+            <column-instance column='[stock_name]' derivation='None' name='[none:stock_name:nk]' pivot='key' type='nominal' />
+            <column caption='Stock Name' datatype='string' name='[stock_name]' role='dimension' type='nominal' />
+            <column-instance column='[market_value_cr]' derivation='Sum' name='[sum:market_value_cr:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:stock_name:nk]'>
+            <groupfilter function='level-members' level='[none:stock_name:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:stock_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.00l3wyp07swk6k1682l5b1w0d49w].[sum:market_value_cr:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:stock_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:stock_name:nk]</rows>
+        <cols>[federated.00l3wyp07swk6k1682l5b1w0d49w].[sum:market_value_cr:qk]</cols>
+      </table>
+      <simple-id uuid='{8688C30B-9741-4120-8535-2F615E1B82F8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Executive Overview'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='AUM by Fund House' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='21' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='AUM by Fund House' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5A86E258-14A3-49F9-A17F-6C3858B1FC58}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Investor Analytics'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Age Group Distribution' w='49200' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98000' id='5' name='State Investment ' w='49200' x='50000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Age Group Distribution' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='5' is-fixed='true' name='State Investment ' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E747321B-A8D2-43B4-B4D2-B014FC5F47E6}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='New Data Source'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{269A47BF-8630-44B4-80A3-24BFFF2FB897}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Perfromace Analysis'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Sharpe Ranking' w='49200' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98000' id='5' name='5 Year Returns' w='49200' x='50000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sharpe Ranking' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='5' is-fixed='true' name='5 Year Returns' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F49289BD-FAF4-42A3-ADB7-0518C5AB41E0}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Portfolio Analytics'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Top Holdings' w='49200' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98000' id='5' name='Sector Allocation' w='49200' x='50000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Top Holdings' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='5' is-fixed='true' name='Sector Allocation' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{ABB2A8A1-8AD0-4D4E-96BE-96084F45ECB4}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='worksheet' name='AUM by Fund House'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1hbcs5n1frkkif0zv693m18phlut].[none:fund_house:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9C0B63D2-9766-4061-A7B5-1D7DDC3A3E2A}' />
+    </window>
+    <window class='dashboard' name='Executive Overview'>
+      <viewpoints>
+        <viewpoint name='AUM by Fund House' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{9BD4CA4F-DF1D-49E9-86F2-B27FB8C720EA}' />
+    </window>
+    <window class='worksheet' name='Sharpe Ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1c422ml0laery51bpxozo1ik5nyz].[none:scheme_name:nk]' type='filter' />
+            <card param='[federated.1c422ml0laery51bpxozo1ik5nyz].[none:risk_grade:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4BF45905-5455-47C0-A200-02989DCA4E5A}' />
+    </window>
+    <window class='worksheet' name='5 Year Returns'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{231DF388-F642-4819-86B2-5C6AC02C0437}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Perfromace Analysis'>
+      <viewpoints>
+        <viewpoint name='5 Year Returns' />
+        <viewpoint name='Sharpe Ranking' />
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{C6FD9EB6-FB76-44AB-9C8C-8255C05B69CD}' />
+    </window>
+    <window class='worksheet' name='Age Group Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0escz7h08f11l41bhw1sv0ik1qw2].[none:age_group:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0escz7h08f11l41bhw1sv0ik1qw2].[ctd:investor_id:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB2C9959-ECE4-4336-8EA7-A14BCE97E4AA}' />
+    </window>
+    <window class='worksheet' name='State Investment '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF490E50-6B1B-4EA8-8236-06BC317353C6}' />
+    </window>
+    <window class='dashboard' name='Investor Analytics'>
+      <viewpoints>
+        <viewpoint name='Age Group Distribution' />
+        <viewpoint name='State Investment ' />
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{613BE2B4-981B-46B0-973B-19E3CD762326}' />
+    </window>
+    <window class='dashboard' name='New Data Source'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{9AD4D9F9-009B-4C6B-8368-925DE7035AE0}' />
+    </window>
+    <window class='worksheet' name='Sector Allocation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:sector:nk]' type='filter' />
+            <card param='[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:stock_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E502321A-66A7-4D2D-810C-FDFFA9177C17}' />
+    </window>
+    <window class='worksheet' name='Top Holdings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.00l3wyp07swk6k1682l5b1w0d49w].[none:stock_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{210968FE-424A-4C5C-B144-E8F40D703007}' />
+    </window>
+    <window class='dashboard' name='Portfolio Analytics'>
+      <viewpoints>
+        <viewpoint name='Sector Allocation' />
+        <viewpoint name='Top Holdings' />
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{0C992C90-8AB8-41AF-BF19-90641F9A50E7}' />
+    </window>
+  </windows>
+</workbook>

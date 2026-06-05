@@ -1,0 +1,215 @@
+# BLUESTOCK MUTUAL FUND ANALYTICS CAPSTONE PROJECT
+
+## 1. Introduction
+
+The objective of this project is to analyze the Indian Mutual Fund industry using real-world datasets. The project covers data ingestion, data cleaning, database design, exploratory data analysis, performance analytics, advanced analytics, and dashboard creation.
+
+The analysis helps understand fund performance, investor behavior, sector allocation, SIP growth trends, and mutual fund recommendations.
+
+---
+
+# 2. Dataset Description
+
+The project uses 10 datasets:
+
+1. Fund Master
+2. NAV History
+3. AUM by Fund House
+4. Monthly SIP Inflows
+5. Category Inflows
+6. Industry Folio Count
+7. Scheme Performance
+8. Investor Transactions
+9. Portfolio Holdings
+10. Benchmark Indices
+
+These datasets provide information about scheme characteristics, historical NAVs, investor transactions, portfolio composition, benchmark performance, and mutual fund industry trends.
+
+---
+
+# 3. ETL Pipeline
+
+The ETL process was implemented using Python and Pandas.
+
+Steps performed:
+
+- Loaded all CSV files.
+- Validated column structures.
+- Checked missing values.
+- Downloaded live NAV data from MFAPI.
+- Stored raw files in the data/raw folder.
+- Created reusable ingestion scripts.
+
+Tools Used:
+
+- Python
+- Pandas
+- Requests
+- Jupyter Notebook
+
+---
+
+# 4. Data Cleaning
+
+Data cleaning activities included:
+
+- Date conversion to datetime format.
+- Duplicate removal.
+- Missing value handling.
+- Transaction standardization.
+- Validation of positive NAV values.
+- Validation of expense ratios.
+- Consistent categorical values.
+
+Outputs were stored in the data/processed folder.
+
+---
+
+# 5. Database Design
+
+A SQLite database was designed using a star schema.
+
+Fact Tables:
+
+- fact_nav
+- fact_transactions
+- fact_performance
+- fact_aum
+
+Dimension Tables:
+
+- dim_fund
+- dim_date
+
+Benefits:
+
+- Faster querying
+- Better reporting structure
+- Simplified analytics
+
+---
+
+# 6. Exploratory Data Analysis
+
+Several visualizations were created.
+
+Key findings:
+
+1. Large-cap and diversified categories contain the highest number of schemes.
+2. Most schemes belong to medium and high-risk categories.
+3. SBI and HDFC manage the largest AUM.
+4. SIP inflows have grown consistently from 2022 to 2025.
+5. Category inflows indicate strong investor preference for equity funds.
+6. Folio counts doubled during the analysis period.
+7. Investors aged 26–45 form the largest investor segment.
+8. State-wise participation shows concentration in major states.
+9. Banking is the dominant sector allocation.
+10. Mutual fund adoption continues to rise across India.
+
+---
+
+# 7. Performance Analytics
+
+Performance metrics calculated:
+
+## Daily Returns
+
+Daily returns were computed using:
+
+Return = (NAV_t / NAV_t-1) - 1
+
+## CAGR
+
+Calculated for:
+
+- 1 Year
+- 3 Years
+- 5 Years
+
+## Sharpe Ratio
+
+Used risk-free rate:
+
+6.5%
+
+## Sortino Ratio
+
+Calculated using downside deviation.
+
+## Alpha and Beta
+
+Calculated using benchmark index regression.
+
+## Maximum Drawdown
+
+Measured worst historical decline for each fund.
+
+## Fund Scorecard
+
+Composite ranking was generated using:
+
+- Return Rank
+- Sharpe Rank
+- Alpha Rank
+- Expense Ratio
+- Maximum Drawdown
+
+---
+
+# 8. Advanced Analytics
+
+Advanced analytics included:
+
+- Fund recommendation engine
+- Risk-adjusted ranking
+- Alpha/Beta comparison
+- Composite fund scoring
+
+Top-ranked funds demonstrated strong returns with lower risk.
+
+---
+
+# 9. Dashboard Development
+
+An interactive Tableau dashboard was created.
+
+Dashboard Pages:
+
+1. Executive Overview
+2. Performance Analytics
+3. Investor Analytics
+4. Portfolio Analytics
+
+Interactive filters allow dynamic exploration of fund performance and investor behavior.
+
+---
+
+# 10. Key Findings
+
+- Mutual fund industry witnessed strong growth.
+- SIP inflows reached record highs.
+- Equity funds dominated investor preference.
+- Banking sector had highest portfolio allocation.
+- Top-performing funds generated superior risk-adjusted returns.
+- Investor participation increased significantly between 2022 and 2025.
+
+---
+
+# 11. Conclusion
+
+The project successfully implemented a complete data analytics pipeline covering ETL, data cleaning, database management, exploratory analysis, performance evaluation, advanced analytics, and dashboard development.
+
+The analysis demonstrates how data-driven insights can support investment decision-making and mutual fund evaluation.
+
+---
+
+# 12. Future Scope
+
+Future improvements include:
+
+- Real-time NAV monitoring
+- Automated ETL scheduling
+- Streamlit web application
+- Portfolio optimization
+- Monte Carlo simulations
+- Automated reporting system

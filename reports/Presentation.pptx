@@ -1,0 +1,156 @@
+SLIDE 1 – TITLE
+
+Bluestock Mutual Fund Analytics Capstone Project
+
+Prepared By:
+Prashwin Prabhakar
+
+---
+
+SLIDE 2 – PROJECT OBJECTIVE
+
+• Analyze Mutual Fund Industry Data
+
+• Study Investor Behaviour
+
+• Evaluate Fund Performance
+
+• Build Interactive Dashboard
+
+• Generate Investment Insights
+
+---
+
+SLIDE 3 – DATASETS USED
+
+• Fund Master
+
+• NAV History
+
+• AUM Data
+
+• SIP Inflows
+
+• Category Inflows
+
+• Folio Count
+
+• Scheme Performance
+
+• Investor Transactions
+
+• Portfolio Holdings
+
+• Benchmark Indices
+
+---
+
+SLIDE 4 – ETL PROCESS
+
+• CSV Loading
+
+• Data Validation
+
+• Live NAV Collection
+
+• Missing Value Handling
+
+• Data Storage
+
+Tools:
+
+Python, Pandas, Requests
+
+---
+
+SLIDE 5 – DATA CLEANING
+
+• Date Standardization
+
+• Duplicate Removal
+
+• Missing Value Treatment
+
+• Transaction Validation
+
+• Expense Ratio Validation
+
+• SQLite Loading
+
+---
+
+SLIDE 6 – EDA FINDINGS
+
+• SIP inflows increased significantly
+
+• Equity funds dominated inflows
+
+• Folio count doubled
+
+• Banking sector led allocations
+
+• Young investors formed largest segment
+
+---
+
+SLIDE 7 – PERFORMANCE ANALYTICS
+
+Metrics Computed:
+
+• Daily Returns
+
+• CAGR
+
+• Sharpe Ratio
+
+• Sortino Ratio
+
+• Alpha
+
+• Beta
+
+• Maximum Drawdown
+
+---
+
+SLIDE 8 – ADVANCED ANALYTICS
+
+• Fund Recommendation Engine
+
+• Risk Ranking
+
+• Alpha/Beta Analysis
+
+• Fund Scorecard
+
+• Top Performing Funds
+
+---
+
+SLIDE 9 – TABLEAU DASHBOARD
+
+Dashboard Pages:
+
+• Executive Overview
+
+• Performance Analytics
+
+• Investor Analytics
+
+• Portfolio Analytics
+
+Interactive Filters Enabled
+
+---
+
+SLIDE 10 – CONCLUSION
+
+• Successfully completed end-to-end analytics pipeline
+
+• Generated actionable investment insights
+
+• Built professional Tableau dashboard
+
+• Demonstrated practical data analytics skills
+
+Thank You
